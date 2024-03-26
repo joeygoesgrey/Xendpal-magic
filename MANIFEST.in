@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include requirements.txt
+exclude iso_8859_1_values.json
+recursive-exclude tests *
+recursive-exclude xendpalmagic/__pycache__ *
