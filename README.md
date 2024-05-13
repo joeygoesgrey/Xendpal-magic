@@ -1,9 +1,9 @@
 
 ---
 
-# Xendpal-magic: Advanced File Type Detection Library
+# Xendpalmagic: Advanced File Type Detection Library
 
-Xendpal-magic is a comprehensive Python library designed to enhance file type detection through a multi-faceted approach. By combining file extensions, magic numbers, content analysis, and header parsing, Xendpal-magic offers unmatched accuracy and reliability for identifying a wide range of file formats.
+Xendpalmagic is a comprehensive Python library designed to enhance file type detection through a multi-faceted approach. By combining file extensions, magic numbers, content analysis, and header parsing, Xendpalmagic offers unmatched accuracy and reliability for identifying a wide range of file formats.
 
 ## Features
 
@@ -17,20 +17,21 @@ Xendpal-magic is a comprehensive Python library designed to enhance file type de
 Install Xendpal-magic using pip:
 
 ```bash
-pip install xendpal-magic
+pip install xendpalmagic
 ```
 
 ## Quick Start
 
 ```python
-from xendpal_magic import FileSignatureMatcher
+from xendpalmagic import FileSignatureMatcher
 
 # Initialize the matcher
 matcher = FileSignatureMatcher()
 
 # Determine the file type of 'example.pdf'
-file_type = matcher.determine_file_type('example.pdf')
+file_type, method = matcher.determine_file_type('example.pdf')
 print(file_type)  # Outputs: 'application/pdf'
+
 ```
 
 ## Advanced Usage
@@ -39,8 +40,9 @@ print(file_type)  # Outputs: 'application/pdf'
 
 ```python
 matcher = FileSignatureMatcher(detection_method='signature', return_type='description')
-file_description = matcher.determine_file_type('example.docx')
+file_description, method = matcher.determine_file_type('example.docx')
 print(file_description)  # Outputs: 'Microsoft Word document'
+
 ```
 
 ### Adding Custom File Signatures
@@ -60,7 +62,7 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ## License
 
-Xendpal-magic is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Xendpalmagic is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
