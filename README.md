@@ -56,18 +56,5 @@ matcher.add_custom_signature(
 )
 ```
 
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and suggest improvements.
-
-## License
-
-Xendpalmagic is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Special thanks to all [contributors](https://github.com/yourusername/xendpal-magic/contributors) who have helped shape Xendpal-magic into what it is today.
-
----
-
+ 
  
