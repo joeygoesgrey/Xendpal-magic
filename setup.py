@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.4'
+VERSION = '0.0.5'
 DESCRIPTION = 'Xendpalmagic: Advanced File Type Detection Library'
 LONG_DESCRIPTION = """Xendpalmagic is a cutting-edge Python library designed to elevate file type detection to new heights. Unlike traditional methods that rely solely on file extensions or basic signatures, Xendpalmagic introduces a multifaceted approach incorporating file extensions, magic numbers, content analysis, and header parsing to deliver unparalleled accuracy and reliability. This library stands out by offering customizable detection strategies, allowing users to tailor the detection process to their specific needs—whether prioritizing speed, accuracy, or a balance of both.
 
@@ -22,11 +22,12 @@ setup(
     name="xendpalmagic",
     version=VERSION,
     author="joeygoesgrey",
-    author_email="<mail@godfreydjoseph@gmail.com>",
+    author_email="mail@godfreydjoseph@gmail.com",
     description=DESCRIPTION,
-    packages=find_packages(exclude=['tests*']),
-    long_description_content_type="text/markdown",
     long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/joeygoesgrey/xendpal-magic",
+    packages=find_packages(exclude=['tests*']),
     install_requires=open('requirements.txt').read().splitlines(),
     python_requires='>=3.6',
     license='MIT',
@@ -54,4 +55,10 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Operating System :: OS Independent',
     ],
+    include_package_data=True,
+    project_urls={
+        "Documentation": "https://github.com/joeygoesgrey/xendpal-magic#readme",
+        "Source": "https://github.com/joeygoesgrey/xendpal-magic",
+        "Tracker": "https://github.com/joeygoesgrey/xendpal-magic/issues",
+    },
 )
